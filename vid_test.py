@@ -12,7 +12,7 @@ def main():
     i = 0
     while success:
         #cv2.imwrite("frames/{}.jpg".format(i), img)
-        frames.append(generate_tone(1/60, 44100, img))
+        frames.append(generate_tone(1/24, 44100, img))
 
         success, img = vid.read()
         i += 1
@@ -28,11 +28,11 @@ def generate_tone(duration, rate, img):
 
     average = img.mean(axis=0).mean(axis=0) 
 
-    r = np.sin(r / average[0])
-    g = np.sin(g / average[1])
-    b = np.sin(b / average[2])
+    r = np.sin(r * average[0])
+    g = np.sin(g * average[1])
+    b = np.sin(b * average[2])
 
-    data = (r + b + g) / 3
+    data = (r + b + g)  / 3
 
     return data
 
