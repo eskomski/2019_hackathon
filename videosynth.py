@@ -1,18 +1,12 @@
 from pyo import *
-import cv2
-import numpy as np
-
-from utils import *
-
+from pyotools import PWM
 from time import time, sleep
 from random import randint, choice
-
-from pwm import PWM
-
-# for those spicy seventh chords
-from mingus.core.chords import seventh
-
+import cv2
+import numpy as np
+from utils import *
 import argparse
+
 parser = argparse.ArgumentParser()
 parser.add_argument('-m', type=str, default=None)
 parser.add_argument('-d', type=int, default=4)
@@ -22,9 +16,7 @@ args = parser.parse_args()
 
 key = args.k
 NUM_VOICES = 2
-
 CHORD_DUR = args.d
-
 IMG_DIFF_THRESHOLD = 10
 
 s = Server(audio='jack')
