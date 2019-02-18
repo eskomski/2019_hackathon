@@ -28,6 +28,4 @@ The early Processing version of this script requires Processing, processing-vide
 
 `videosynth.pde` is our original Processing implementation, which got ditched because envelope gen with Pyo was easier and we managed to get Pyo to work on one of our own machines.
 
-The `experiments` directory contains a few scripts made early in the development of this project to generate raw PCM signals directly from images and video. 
-
-`pwm.py` is part of the pyo-tools library by Olivier Belanger, author of Pyo. It powers the PWM oscillators used in the chords and lead. We threw it in this repo instead of installing the whole library—we never got around to messing with duty cycle, so you could get away with using `LFO(type=2)` or `Phasor() > 0.5` instead of this (but you should find a feature and set the duty cycle and see how it sounds!)
+The `experiments` directory contains a few scripts made early in the development of this project to generate raw PCM signals directly from images and video.
