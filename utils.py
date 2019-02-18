@@ -3,7 +3,7 @@ from random import randint, choice
 
 from mingus.core import chords, progressions, notes
 
-def gen_note(octave=1, TONIC=69, SCALE=[0, 2, 4, 5, 7, 9, 11, 12]):
+def gen_note(octave=1, TONIC=60, SCALE=[0, 2, 4, 5, 7, 9, 11, 12]):
     return midiToHz((TONIC + (12 * octave)) + SCALE[randint(0, 7)])
 
 def gen_chord(octave=1, mode='rand', NUM_VOICES=3):
@@ -17,7 +17,7 @@ def gen_chord(octave=1, mode='rand', NUM_VOICES=3):
 
     return chord
 
-def gen_fifth(octave=1, prev_chord=None, TONIC=69, SCALE=[0, 2, 4, 5, 7, 9, 11, 12]):
+def gen_fifth(octave=1, prev_chord=None, TONIC=60, SCALE=[0, 2, 4, 5, 7, 9, 11, 12]):
     note = (TONIC + (12 * octave)) + SCALE[randint(0, 7)]
     if prev_chord is not None:
         prev_chord = [hzToMidi(x) for x in prev_chord]
