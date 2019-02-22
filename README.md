@@ -3,7 +3,7 @@
 
 **tl;dr**: the code you're looking for is in `videosynth.py`.
 
-This project was developed for the 2019 WWU ACM Hackathon. Within 24 hours, we went through a few iterations and a number of ideas until eventually converging on using video features to parameterize a synthesizer and sequencer.
+This project was developed for the 2019 WWU ACM Hackathon. Within 24 hours, we went through a few iterations and a number of ideas until eventually converging on using video features to parameterize a synthesizer and sequencer. In the end, our submission took first place in the competition!
 
 The name *Synesthizer* is a portmanteau of "synesthesia" and "synthesizer", a nod to the parallel between image-to-sound generation and synesthesia, where stimulation of one sense can elicit sensations with a different sense.
 
