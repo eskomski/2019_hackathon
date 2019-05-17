@@ -31,3 +31,9 @@ The early Processing version of this script requires Processing, processing-vide
 `videosynth.pde` is our original Processing implementation, which got ditched because envelope gen with Pyo was easier and we managed to get Pyo to work on one of our own machines.
 
 The `experiments` directory contains a few scripts made early in the development of this project to generate raw PCM signals directly from images and video.
+
+## Authors
+Elliott Skomski (@eskomski)  
+Christian Careaga (@CCareaga)  
+Ryan Haight (@ryanhaight444)  
+Daniel Tarnu
